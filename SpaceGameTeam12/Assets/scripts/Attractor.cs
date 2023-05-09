@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 public class Attractor : MonoBehaviour
@@ -8,6 +9,11 @@ public class Attractor : MonoBehaviour
     private void FixedUpdate()
     {
         Attractor[] attractors = FindObjectsOfType<Attractor>();
+        foreach (Attractor attractor in attractors) 
+        {
+            if (attractor != this)
+            Attract(attractor);
+        }
     }
 
     void Attract(Attractor objToAttract) 

@@ -19,7 +19,7 @@ public class Attractor : MonoBehaviour
             Attractor attractor = gravityObject.GetComponent<Attractor>();
             if (attractor != null && attractor != this)
             {
-                Debug.Log("Attracting " + gravityObject.name);
+
                 Attract(attractor);
             }
         }
@@ -39,6 +39,6 @@ public class Attractor : MonoBehaviour
 
         rbToAttract.AddForce(force);
 
-        Debug.Log("Applied force to " + objToAttract.name + ". Magnitude: " + forceMagnitude);
+        
     }
 }

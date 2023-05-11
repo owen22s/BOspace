@@ -1,12 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.Experimental.GraphView;
 using UnityEngine;
-
 
 public class Attractor : MonoBehaviour
 {
-    public Rigidbody rb;
+    private Rigidbody rb;
+
+    private void Start()
+    {
+        rb = GetComponent<Rigidbody>();
+    }
+
     private void FixedUpdate()
     {
         GameObject[] gravityObjects = GameObject.FindGameObjectsWithTag("Gravity");
@@ -15,6 +19,7 @@ public class Attractor : MonoBehaviour
             Attractor attractor = gravityObject.GetComponent<Attractor>();
             if (attractor != null && attractor != this)
             {
+                Debug.Log("Attracting " + gravityObject.name);
                 Attract(attractor);
             }
         }
@@ -33,5 +38,7 @@ public class Attractor : MonoBehaviour
         Vector3 force = direction.normalized * forceMagnitude;
 
         rbToAttract.AddForce(force);
+
+        Debug.Log("Applied force to " + objToAttract.name + ". Magnitude: " + forceMagnitude);
     }
 }

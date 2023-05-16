@@ -18,9 +18,10 @@ public class Bullet : MonoBehaviour
     }
 
 
+
     private void OnTriggerEnter(Collider other)
     {
-        // Check if the bullet collided with an object tagged as the targetTag
+        // Check if the bullet collided with an object tagged as an enemy
         if (other.gameObject.CompareTag("Enemy"))
         {
             Destroy(other.gameObject);

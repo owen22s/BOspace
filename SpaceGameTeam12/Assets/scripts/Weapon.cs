@@ -21,10 +21,10 @@ public class Weapon : MonoBehaviour
         GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
 
         // Get the Rigidbody component of the bullet
-        Rigidbody bulletRb = bullet.GetComponent<Rigidbody>();
+        //Rigidbody bulletRb = bullet.GetComponent<Rigidbody>();
 
         // Apply force to the bullet to shoot it forward
-        bulletRb.AddForce(firePoint.forward * bulletForce, ForceMode.Impulse);
+        //bulletRb.AddForce(firePoint.forward * bulletForce, ForceMode.Impulse);
     }
 }
 

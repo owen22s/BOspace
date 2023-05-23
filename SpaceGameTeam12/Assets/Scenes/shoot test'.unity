@@ -256,8 +256,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationSpeed: 100
   rotationAmount: 180
-  turnleft: 1
-  turnright: 0
+  turnleft: 0
+  turnright: 1
 --- !u!114 &353490644
 MonoBehaviour:
   m_ObjectHideFlags: 0

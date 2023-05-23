@@ -47,6 +47,8 @@ public class PlayerMovement : MonoBehaviour
             // Perform the jump action
             float jumpForce = 5f;
             GetComponent<Rigidbody>().velocity = new Vector3(0f, jumpForce, 0f);
+            GetComponent<AudioSource>().Play();
+
 
             jumpsRemaining--;
         }

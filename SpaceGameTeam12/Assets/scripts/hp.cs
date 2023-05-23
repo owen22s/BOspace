@@ -17,6 +17,7 @@ public class hp : MonoBehaviour
         {
             health -= 1;
             Debug.Log("Health reduced! Current health: " + health);
+            Debug.Log("Collision occurred!");
         }
         if (collision.gameObject.CompareTag("Medkit"))
         {

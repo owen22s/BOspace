@@ -38,7 +38,12 @@ public class hp : MonoBehaviour
             health -= 2;
             Debug.Log("Health reduced! Current health: " + health);
         }
-        void OnTriggerEnter(Collider other) 
+        if (collision.gameObject.CompareTag("Enemy"))
+        {
+            health -= 2;
+            Debug.Log("Health reduced! Current health: " + health);
+        }
+            void OnTriggerEnter(Collider other) 
         {
             if (collision.gameObject.CompareTag("Spikes"))
             {

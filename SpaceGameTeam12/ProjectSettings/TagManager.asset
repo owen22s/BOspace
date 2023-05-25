@@ -7,6 +7,10 @@ TagManager:
   - Gravity
   - Wall
   - Killzone
+  - Enemy
+  - Ground
+  - Strong Enemy
+  - Obstacle
   layers:
   - Default
   - TransparentFX
@@ -14,7 +18,7 @@ TagManager:
   - 
   - Water
   - UI
-  - 
+  - Obstacle
   - 
   - 
   - 

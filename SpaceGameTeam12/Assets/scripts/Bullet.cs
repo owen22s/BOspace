@@ -17,14 +17,13 @@ public class Bullet : MonoBehaviour
         transform.Translate(Vector3.left * speed * Time.deltaTime);
     }
 
-
-
     private void OnTriggerEnter(Collider other)
     {
         // Check if the bullet collided with an object tagged as an enemy
         if (other.gameObject.CompareTag("Enemy"))
         {
             Destroy(other.gameObject);
+            Destroy(gameObject); // Destroy the bullet as well if it hits an enemy
         }
     }
 }

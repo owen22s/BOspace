@@ -48,6 +48,7 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+<<<<<<< HEAD
   - name: foreground
     uniqueID: 621796631
     locked: 0
@@ -56,4 +57,20 @@ TagManager:
     locked: 0
   - name: background
     uniqueID: 1127089633
+=======
+  - name: Background
+    uniqueID: 4146319447
+    locked: 0
+  - name: BackgroundFront
+    uniqueID: 3829534247
+    locked: 0
+  - name: Midground
+    uniqueID: 3613020459
+    locked: 0
+  - name: ForegroundBack
+    uniqueID: 4031127403
+    locked: 0
+  - name: Foreground
+    uniqueID: 2758589165
+>>>>>>> 747be482c9c5cef21538e38a388f51b696dd56e7
     locked: 0

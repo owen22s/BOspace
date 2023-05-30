@@ -8,13 +8,15 @@ public class EnemyBulletScript : MonoBehaviour
     private Rigidbody rb;
     public float force;
     private float timer;
+    
+    
     void Start()
     {
         rb= GetComponent<Rigidbody>();
         player = GameObject.FindGameObjectWithTag("Player");
 
-        Vector3 direction = player.transform.position - transform.position;
-        rb.velocity = new Vector3(direction.x, direction.y, direction.z).normalized * force;
+        Vector2 direction = player.transform.position - transform.position;
+        rb.velocity = new Vector2(direction.x, direction.y).normalized * force;
 
         float rot = Mathf.Atan2(-direction.x, -direction.y) * Mathf.Rad2Deg;
         transform.rotation = Quaternion.Euler(0, 0 , rot);

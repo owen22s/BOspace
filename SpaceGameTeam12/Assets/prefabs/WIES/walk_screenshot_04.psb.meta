@@ -252,7 +252,11 @@ ScriptedImporter:
     spriteName: 
     isGroup: 1
     parentIndex: -1
+<<<<<<< HEAD
     spriteID: 5f7286b7f0549384b874455addbc365f
+=======
+    spriteID: b7b2938a2c58b0e4491e4e5e51312fca
+>>>>>>> refs/remotes/origin/main
     layerID: 19
     mosaicPosition: {x: 0, y: 0}
     flatten: 0
@@ -272,7 +276,11 @@ ScriptedImporter:
     spriteName: 
     isGroup: 1
     parentIndex: -1
+<<<<<<< HEAD
     spriteID: 134eae41bfccef34bb2c20885fa48b38
+=======
+    spriteID: 7ed146790a5d9d241bf720ebf086e892
+>>>>>>> refs/remotes/origin/main
     layerID: 16
     mosaicPosition: {x: 0, y: 0}
     flatten: 0
@@ -292,7 +300,11 @@ ScriptedImporter:
     spriteName: 
     isGroup: 1
     parentIndex: -1
+<<<<<<< HEAD
     spriteID: d3d2d708278a2b548a4c1204e4c04eef
+=======
+    spriteID: c444824743db67c469cef90e49947b64
+>>>>>>> refs/remotes/origin/main
     layerID: 13
     mosaicPosition: {x: 0, y: 0}
     flatten: 0
@@ -312,7 +324,11 @@ ScriptedImporter:
     spriteName: 
     isGroup: 1
     parentIndex: -1
+<<<<<<< HEAD
     spriteID: c4606257aa9b2fa4e86ad64cf54d3fa5
+=======
+    spriteID: df44b78db8a092b4fa5a6da8a6153bbb
+>>>>>>> refs/remotes/origin/main
     layerID: 10
     mosaicPosition: {x: 0, y: 0}
     flatten: 0
@@ -332,7 +348,11 @@ ScriptedImporter:
     spriteName: 
     isGroup: 1
     parentIndex: -1
+<<<<<<< HEAD
     spriteID: a934722fcf208924eadaf2186cdd774a
+=======
+    spriteID: 8ff1560ca6cf17c43a7c6323f23cb1c2
+>>>>>>> refs/remotes/origin/main
     layerID: 7
     mosaicPosition: {x: 0, y: 0}
     flatten: 0
@@ -352,7 +372,11 @@ ScriptedImporter:
     spriteName: 
     isGroup: 1
     parentIndex: -1
+<<<<<<< HEAD
     spriteID: 0e81b9dbb125644488f94c82f2f2a8ce
+=======
+    spriteID: 9ff5a7730a38e0740a3d4dd047a59dcd
+>>>>>>> refs/remotes/origin/main
     layerID: 4
     mosaicPosition: {x: 0, y: 0}
     flatten: 0
@@ -372,7 +396,11 @@ ScriptedImporter:
     spriteName: 
     isGroup: 0
     parentIndex: -1
+<<<<<<< HEAD
     spriteID: 9e04a710f1dbe8f44aa57a53b06ff9df
+=======
+    spriteID: 2b0059e2d23b5a2489ed9d60ce36863c
+>>>>>>> refs/remotes/origin/main
     layerID: 1
     mosaicPosition: {x: 0, y: 0}
     flatten: 0

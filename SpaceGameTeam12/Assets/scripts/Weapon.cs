@@ -1,7 +1,6 @@
 using UnityEngine;
 using System.Collections;
 
-
 public class Weapon : MonoBehaviour
 {
     public Transform firePoint;
@@ -10,15 +9,21 @@ public class Weapon : MonoBehaviour
     public AudioSource lasereffect;
 
     private bool canShoot = true;
-    private float shootDelay = 0.5f;
+    private float shootDelay = 1.5f;
+    public float time = 0f;
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonDown(0) && canShoot)
+        time += Time.deltaTime;
+        if (Input.GetMouseButtonDown(0) && time >= shootDelay)
         {
             Shoot();
+            time = 0f;
+            Debug.Log("test");
         }
+
+
     }
 
     void Shoot()
@@ -26,14 +31,6 @@ public class Weapon : MonoBehaviour
         // Create a new bullet instance
         GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
         lasereffect.Play();
-
-        StartCoroutine(ShootDelay());
     }
 
-    IEnumerator ShootDelay()
-    {
-        canShoot = false;
-        yield return new WaitForSeconds(shootDelay);
-        canShoot = true;
-    }
 }

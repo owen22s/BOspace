@@ -41,21 +41,3 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-<<<<<<< HEAD
-=======
-  - name: Back
-    uniqueID: 4263506503
-    locked: 0
-  - name: Backfront
-    uniqueID: 1666403063
-    locked: 0
-  - name: Mid
-    uniqueID: 1631611697
-    locked: 0
-  - name: Frontback
-    uniqueID: 2035453965
-    locked: 0
-  - name: Front
-    uniqueID: 268989467
-    locked: 0
->>>>>>> 7b004f310e00ef5a48dd0ccdccc8d57ca99a2223

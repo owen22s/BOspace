@@ -17,15 +17,14 @@ public class PlayerMovement : MonoBehaviour
 
     private void Update()
     {
-        // Get horizontal and vertical inputs
+        // Get horizontal input
         float horizontalInput = Input.GetAxis("Horizontal");
-        
 
         // Calculate movement vector
-        Vector3 movement = new Vector3(horizontalInput, 0f).normalized;
+        Vector2 movement = new Vector2(horizontalInput, 0f).normalized;
 
         // Apply movement
-        transform.position += movement * speed * Time.deltaTime;
+        transform.position += new Vector3(movement.x, movement.y, 0f) * speed * Time.deltaTime;
 
         // Check for jump input
         if (Input.GetKeyDown(KeyCode.Space))
@@ -46,21 +45,20 @@ public class PlayerMovement : MonoBehaviour
         {
             // Perform the jump action
             float jumpForce = 5f;
-            GetComponent<Rigidbody>().velocity = new Vector3(0f, jumpForce, 0f);
+            GetComponent<Rigidbody2D>().velocity = new Vector2(0f, jumpForce);
             GetComponent<AudioSource>().Play();
-
 
             jumpsRemaining--;
         }
     }
 
-    private void Dash(Vector3 direction)
+    private void Dash(Vector2 direction)
     {
         // Disable dashing during cooldown
         canDash = false;
 
         // Apply dash velocity
-        GetComponent<Rigidbody>().velocity = direction * dashSpeed;
+        GetComponent<Rigidbody2D>().velocity = direction * dashSpeed;
 
         // Start the dash cooldown
         StartCoroutine(DashCooldown());
@@ -71,7 +69,7 @@ public class PlayerMovement : MonoBehaviour
         yield return new WaitForSeconds(dashDuration);
 
         // Wait for the dash duration
-        GetComponent<Rigidbody>().velocity = Vector3.zero;
+        GetComponent<Rigidbody2D>().velocity = Vector2.zero;
 
         yield return new WaitForSeconds(dashCooldown - dashDuration);
 
@@ -79,7 +77,7 @@ public class PlayerMovement : MonoBehaviour
         canDash = true;
     }
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
         // Reset jumps when landing on the ground
         if (collision.gameObject.CompareTag("Ground"))

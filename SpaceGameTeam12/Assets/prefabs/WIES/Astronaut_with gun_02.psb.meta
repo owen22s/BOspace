@@ -103,11 +103,7 @@ ScriptedImporter:
       y: 4
       width: 430
       height: 411
-<<<<<<< HEAD
-    spriteID: 7ea36b571b485d24eac600795f7e0b00
-=======
-    spriteID: 14420b6c0af8dc6498b1aeea35885c1d
->>>>>>> 2a31fc45e1bf726332c85b9d05f693c34c9e49ab
+    spriteID: 191a0a87586517142929fffdfc2bbddc
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -128,11 +124,7 @@ ScriptedImporter:
       y: 855
       width: 227
       height: 669
-<<<<<<< HEAD
-    spriteID: 4449f693b96e6a24083da32558a01ce7
-=======
-    spriteID: 3ffe07ab36bc2584e869ce3c31448bac
->>>>>>> 2a31fc45e1bf726332c85b9d05f693c34c9e49ab
+    spriteID: 33e0482bed4861248b59e2a22b3cf0ca
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -153,11 +145,7 @@ ScriptedImporter:
       y: 1532
       width: 187
       height: 294
-<<<<<<< HEAD
-    spriteID: ced5e8412d320654c9923d4246dfc13f
-=======
-    spriteID: 8b915cbb90c38324ab2db78bcbd5d028
->>>>>>> 2a31fc45e1bf726332c85b9d05f693c34c9e49ab
+    spriteID: a4a970a956a0f164a98b720b8525f677
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -178,11 +166,7 @@ ScriptedImporter:
       y: 423
       width: 382
       height: 424
-<<<<<<< HEAD
-    spriteID: 0fb280028f19ff84a98a25f7af5099dc
-=======
-    spriteID: c3af79b955aa65a459522c4b1253ef09
->>>>>>> 2a31fc45e1bf726332c85b9d05f693c34c9e49ab
+    spriteID: 02e864843ab20fa4e843e27b293764a4
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -203,11 +187,7 @@ ScriptedImporter:
       y: 855
       width: 165
       height: 324
-<<<<<<< HEAD
-    spriteID: 2b944f71bb8d4d641ab6a78116f6ed7c
-=======
-    spriteID: e29045aea96b0c14bb2f9b6695ddb927
->>>>>>> 2a31fc45e1bf726332c85b9d05f693c34c9e49ab
+    spriteID: 176eaeec64607534493da854043210b8
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -228,11 +208,7 @@ ScriptedImporter:
       y: 1187
       width: 181
       height: 287
-<<<<<<< HEAD
-    spriteID: b5e77dfd785c9c64098d97b52df93609
-=======
-    spriteID: 9df293a9cc03e794e8c3bb72855e5cd2
->>>>>>> 2a31fc45e1bf726332c85b9d05f693c34c9e49ab
+    spriteID: b63fb35722a1cc44ab7a3814f2defa39
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -243,179 +219,8 @@ ScriptedImporter:
     parentGroupIndex: -1
     uvTransform: {x: -626, y: 954}
   characterData:
-    bones:
-    - name: Root
-      guid: 9b84fb4e5b2cbfb47ba06715243e5419
-      position: {x: 953.66425, y: 719.303, z: 0}
-      rotation: {x: 0, y: 0, z: -0.7071069, w: 0.7071067}
-      length: 332.6294
-      parentId: -1
-      color:
-        serializedVersion: 2
-        rgba: 4278190335
-    - name: VK_BovenBeen_01
-      guid: efacde8610f4f094fbe40fad3115c2cf
-      position: {x: 955.0927, y: 504.94272, z: 0}
-      rotation: {x: 0, y: 0, z: -0.69924945, w: 0.71487784}
-      length: 144.3816
-      parentId: -1
-      color:
-        serializedVersion: 2
-        rgba: 4278255615
-    - name: VK_Voet_03
-      guid: ca5a9962f740f6543939d6ae10b3b0b8
-      position: {x: 959.93695, y: 245.2673, z: 0}
-      rotation: {x: 0, y: 0, z: 0.0029801163, w: 0.9999956}
-      length: 72.92604
-      parentId: -1
-      color:
-        serializedVersion: 2
-        rgba: 4278255360
-    - name: VK_BovenArm_Gun_01
-      guid: 076c2bf7481672941b061c7d62817315
-      position: {x: 953.6642, y: 654.3611, z: 0}
-      rotation: {x: 0, y: 0, z: -0.71125376, w: 0.70293534}
-      length: 134.64507
-      parentId: -1
-      color:
-        serializedVersion: 2
-        rgba: 4294967040
-    - name: VK_OnderArm_Gun_02
-      guid: 690ce3d7a26d90747814feb695d047cc
-      position: {x: 952.0802, y: 511.80548, z: 0}
-      rotation: {x: 0, y: 0, z: -0.70828056, w: 0.70593107}
-      length: 476.77176
-      parentId: -1
-      color:
-        serializedVersion: 2
-        rgba: 4294901760
-    - name: Head
-      guid: e619c9dd9dfb1bb4c8d516f8fb71e086
-      position: {x: 950.49634, y: 1018.6695, z: 0}
-      rotation: {x: 0, y: 0, z: -0.7024398, w: 0.7117432}
-      length: 361.17175
-      parentId: -1
-      color:
-        serializedVersion: 2
-        rgba: 4294902015
-    - name: AK_Been_01
-      guid: 23ec5b91486f2954fa71d07944398df8
-      position: {x: 945.5858, y: 504.7187, z: 0}
-      rotation: {x: 0, y: 0, z: -0.6908516, w: 0.7229966}
-      length: 137.83876
-      parentId: -1
-      color:
-        serializedVersion: 2
-        rgba: 4278223103
-    - name: AK_Voet_02
-      guid: 4ca08fc1c7da0fa4d84850e1fe6ef679
-      position: {x: 956.83215, y: 248.87, z: 0}
-      rotation: {x: 0, y: 0, z: 0.00000063269954, w: 1}
-      length: 69.69379
-      parentId: -1
-      color:
-        serializedVersion: 2
-        rgba: 4278255488
-    - name: AK_BovenArm_01
-      guid: 807eeb7c4536cfd448e80a33fac68058
-      position: {x: 955.24817, y: 654.3611, z: 0}
-      rotation: {x: 0, y: 0, z: -0.7114581, w: 0.70272857}
-      length: 128.30965
-      parentId: -1
-      color:
-        serializedVersion: 2
-        rgba: 4286643968
-    - name: AK_OnderArm_02
-      guid: 33fa53e4419915746821724852f04acb
-      position: {x: 953.6642, y: 526.0613, z: 0}
-      rotation: {x: 0, y: 0, z: -0.71757853, w: 0.69647765}
-      length: 106.171906
-      parentId: -1
-      color:
-        serializedVersion: 2
-        rgba: 4294934528
-    - name: AK_Hand_03
-      guid: a0a1e6ab4d63a6748966019d70c06d8a
-      position: {x: 950.4962, y: 419.93658, z: 0}
-      rotation: {x: 0, y: 0, z: -0.70710605, w: 0.70710754}
-      length: 52.270416
-      parentId: -1
-      color:
-        serializedVersion: 2
-        rgba: 4286961151
-    - name: VK_OnderBeen_02
-      guid: 5d2ccd7f4f2f9814dab30110c5a65173
-      position: {x: 958.2836, y: 360.59637, z: 0}
-      rotation: {x: 0, y: 0, z: -0.7031084, w: 0.71108276}
-      length: 115.678474
-      parentId: -1
-      color:
-        serializedVersion: 2
-        rgba: 4286578943
-    - name: AK_Been_4
-      guid: 4e7f54a1a0fdadd44b006d43e40c819a
-      position: {x: 137.83878, y: 0.0000028420764, z: 0}
-      rotation: {x: 0, y: 0, z: -0.004708473, w: 0.999989}
-      length: 119.16096
-      parentId: 6
-      color:
-        serializedVersion: 2
-        rgba: 4278255615
-    parts:
-    - spritePosition:
-        x: 745
-        y: 645
-        width: 430
-        height: 411
-      spriteId: a477e6f87ebee0343a8642e31d1ed189
-      bones: 05000000
-      parentGroup: 0
-      order: 0
-    - spritePosition:
-        x: 847
-        y: 24
-        width: 227
-        height: 669
-      spriteId: 9ec3432195e668e4bac76e1c988f7793
-      bones: 020000000300000004000000
-      parentGroup: 0
-      order: 0
-    - spritePosition:
-        x: 869
-        y: 225
-        width: 187
-        height: 294
-      spriteId: a960aaf5f87e0c040b8dba542e0c79f4
-      bones: 01000000020000000b000000
-      parentGroup: 0
-      order: 0
-    - spritePosition:
-        x: 769
-        y: 373
-        width: 382
-        height: 424
-      spriteId: ba5b397507dd2ed43a7597d01177b1ba
-      bones: 00000000
-      parentGroup: 0
-      order: 0
-    - spritePosition:
-        x: 873
-        y: 360
-        width: 165
-        height: 324
-      spriteId: 0308786568f90024e9519682473212d0
-      bones: 08000000090000000a000000
-      parentGroup: 0
-      order: 0
-    - spritePosition:
-        x: 865
-        y: 233
-        width: 181
-        height: 287
-      spriteId: d784a720bbaa8d942ba3cff88cccdf13
-      bones: 06000000070000000c000000
-      parentGroup: 0
-      order: 0
+    bones: []
+    parts: []
     dimension: {x: 0, y: 0}
     characterGroups: []
     boneReadOnly: 0
@@ -457,11 +262,7 @@ ScriptedImporter:
     spriteName: Head_01
     isGroup: 0
     parentIndex: 0
-<<<<<<< HEAD
-    spriteID: 7ea36b571b485d24eac600795f7e0b00
-=======
-    spriteID: 14420b6c0af8dc6498b1aeea35885c1d
->>>>>>> 2a31fc45e1bf726332c85b9d05f693c34c9e49ab
+    spriteID: 191a0a87586517142929fffdfc2bbddc
     layerID: 18
     mosaicPosition: {x: 4, y: 4}
     flatten: 0
@@ -481,11 +282,7 @@ ScriptedImporter:
     spriteName: Arm_&Gun_01
     isGroup: 0
     parentIndex: 2
-<<<<<<< HEAD
-    spriteID: 4449f693b96e6a24083da32558a01ce7
-=======
-    spriteID: 3ffe07ab36bc2584e869ce3c31448bac
->>>>>>> 2a31fc45e1bf726332c85b9d05f693c34c9e49ab
+    spriteID: 33e0482bed4861248b59e2a22b3cf0ca
     layerID: 21
     mosaicPosition: {x: 4, y: 855}
     flatten: 0
@@ -515,11 +312,7 @@ ScriptedImporter:
     spriteName: Leg_01
     isGroup: 0
     parentIndex: 5
-<<<<<<< HEAD
-    spriteID: ced5e8412d320654c9923d4246dfc13f
-=======
-    spriteID: 8b915cbb90c38324ab2db78bcbd5d028
->>>>>>> 2a31fc45e1bf726332c85b9d05f693c34c9e49ab
+    spriteID: a4a970a956a0f164a98b720b8525f677
     layerID: 12
     mosaicPosition: {x: 4, y: 1532}
     flatten: 0
@@ -539,11 +332,7 @@ ScriptedImporter:
     spriteName: Torso_01
     isGroup: 0
     parentIndex: 7
-<<<<<<< HEAD
-    spriteID: 0fb280028f19ff84a98a25f7af5099dc
-=======
-    spriteID: c3af79b955aa65a459522c4b1253ef09
->>>>>>> 2a31fc45e1bf726332c85b9d05f693c34c9e49ab
+    spriteID: 02e864843ab20fa4e843e27b293764a4
     layerID: 9
     mosaicPosition: {x: 4, y: 423}
     flatten: 0
@@ -563,11 +352,7 @@ ScriptedImporter:
     spriteName: Arm_02
     isGroup: 0
     parentIndex: 9
-<<<<<<< HEAD
-    spriteID: 2b944f71bb8d4d641ab6a78116f6ed7c
-=======
-    spriteID: e29045aea96b0c14bb2f9b6695ddb927
->>>>>>> 2a31fc45e1bf726332c85b9d05f693c34c9e49ab
+    spriteID: 176eaeec64607534493da854043210b8
     layerID: 6
     mosaicPosition: {x: 239, y: 855}
     flatten: 0
@@ -587,11 +372,7 @@ ScriptedImporter:
     spriteName: Leg_02
     isGroup: 0
     parentIndex: 11
-<<<<<<< HEAD
-    spriteID: b5e77dfd785c9c64098d97b52df93609
-=======
-    spriteID: 9df293a9cc03e794e8c3bb72855e5cd2
->>>>>>> 2a31fc45e1bf726332c85b9d05f693c34c9e49ab
+    spriteID: b63fb35722a1cc44ab7a3814f2defa39
     layerID: 3
     mosaicPosition: {x: 239, y: 1187}
     flatten: 0

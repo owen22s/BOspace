@@ -476,19 +476,19 @@ ScriptedImporter:
         rgba: 4286578943
     - name: VK_OnderArm_02
       guid: c758a379cb9f3c54c9840885c97d47c2
-      position: {x: 89.401306, y: 196.36823, z: 0}
-      rotation: {x: 0, y: 0, z: -0.6996264, w: 0.71450895}
+      position: {x: 120.2162, y: 0.000021127544, z: 0}
+      rotation: {x: 0, y: 0, z: 0.010523562, w: 0.9999446}
       length: 131.2993
-      parentId: -1
+      parentId: 0
       color:
         serializedVersion: 2
         rgba: 4278255615
     - name: VK_Hand_03
       guid: 50439cc4d336720459e473d92f935f65
-      position: {x: 92.16467, y: 65.09802, z: 0}
-      rotation: {x: 0, y: 0, z: -0.687757, w: 0.72594106}
-      length: 51.200993
-      parentId: -1
+      position: {x: 131.2992, y: 0.0000494714, z: 0}
+      rotation: {x: 0, y: 0, z: 0.016478976, w: 0.9998642}
+      length: 51.200996
+      parentId: 1
       color:
         serializedVersion: 2
         rgba: 4278255360
@@ -942,19 +942,19 @@ ScriptedImporter:
         rgba: 4278255360
     - name: VK_OnderBeen_02
       guid: 2eb6d7e4053e3174882ce62da3919fc9
-      position: {x: 92.56177, y: 141.73181, z: 0}
-      rotation: {x: 0, y: 0, z: -0.69774336, w: 0.71634793}
-      length: 120.42183
-      parentId: -1
+      position: {x: 122.05643, y: 0.00007359418, z: 0}
+      rotation: {x: 0, y: 0, z: -0.006314702, w: 0.99998003}
+      length: 120.421814
+      parentId: 0
       color:
         serializedVersion: 2
         rgba: 4294967040
     - name: VK_Voet_03
       guid: 7fabd2f03716d034f85a5e77cdf82efa
-      position: {x: 95.72986, y: 21.351685, z: 0}
-      rotation: {x: 0, y: 0, z: -0.023237327, w: 0.99973}
-      length: 68.18324
-      parentId: -1
+      position: {x: 120.42186, y: -0.000117376505, z: 0}
+      rotation: {x: 0, y: 0, z: 0.68090886, w: 0.7323682}
+      length: 68.18322
+      parentId: 1
       color:
         serializedVersion: 2
         rgba: 4294901760
@@ -1746,19 +1746,19 @@ ScriptedImporter:
         rgba: 4286643968
     - name: AK_OnderArm_02
       guid: e6f01d83d5587a841b4beea43d32f299
-      position: {x: 129.07935, y: 157.732, z: 0}
-      rotation: {x: 0, y: 0, z: -0.8972415, w: 0.4415403}
+      position: {x: 119.4235, y: 0.000040347935, z: 0}
+      rotation: {x: 0, y: 0, z: 0.0036943736, w: 0.99999326}
       length: 107.94749
-      parentId: -1
+      parentId: 0
       color:
         serializedVersion: 2
         rgba: 4294934528
     - name: AK_Hand_03
       guid: f8158c9f1a2098c4c80d66c9a3441903
-      position: {x: 63.22162, y: 72.20181, z: 0}
-      rotation: {x: 0, y: 0, z: -0.89773667, w: 0.44053257}
-      length: 57.31141
-      parentId: -1
+      position: {x: 107.947556, y: -0.0007934968, z: 0}
+      rotation: {x: 0, y: 0, z: -0.0011228303, w: 0.99999934}
+      length: 57.311417
+      parentId: 1
       color:
         serializedVersion: 2
         rgba: 4294901888
@@ -2172,26 +2172,26 @@ ScriptedImporter:
       guid: 18cea1f60213b514aa5ee64e763ede2c
       position: {x: 60.97821, y: 247.3339, z: 0}
       rotation: {x: 0, y: 0, z: -0.5358165, w: 0.84433454}
-      length: 124.67723
+      length: 124.6771
       parentId: -1
       color:
         serializedVersion: 2
         rgba: 4294902015
     - name: AK_OnderBeen_02
       guid: 047eaf18bbea858458177def9cc16a6a
-      position: {x: 114.06592, y: 134.52386, z: 0}
-      rotation: {x: 0, y: 0, z: -0.5272387, w: 0.84971726}
-      length: 119.55422
-      parentId: -1
+      position: {x: 124.67703, y: -0.000025121679, z: 0}
+      rotation: {x: 0, y: 0, z: 0.010126682, w: 0.99994874}
+      length: 119.55426
+      parentId: 0
       color:
         serializedVersion: 2
         rgba: 4278223103
     - name: AK_Voet_03
       guid: 3583432ed5e4e254f8275b7338e274fa
-      position: {x: 167.15247, y: 27.402267, z: 0}
-      rotation: {x: 0, y: 0, z: 0.19041817, w: 0.9817031}
+      position: {x: 119.55433, y: 0.00010123817, z: 0}
+      rotation: {x: 0, y: 0, z: 0.6793948, w: 0.733773}
       length: 65.925446
-      parentId: -1
+      parentId: 1
       color:
         serializedVersion: 2
         rgba: 4278255488
@@ -2663,19 +2663,19 @@ ScriptedImporter:
         rgba: 4278255360
     - name: VK_OnderBeen_02
       guid: 2eb6d7e4053e3174882ce62da3919fc9
-      position: {x: 904.56177, y: 321.7318, z: 0}
-      rotation: {x: 0, y: 0, z: -0.69774336, w: 0.71634793}
+      position: {x: 122.056465, y: 0.000051436433, z: 0}
+      rotation: {x: 0, y: 0, z: -0.006314701, w: 0.9999801}
       length: 120.42182
-      parentId: -1
+      parentId: 2
       color:
         serializedVersion: 2
         rgba: 4294967040
     - name: VK_Voet_03
       guid: 7fabd2f03716d034f85a5e77cdf82efa
-      position: {x: 907.72986, y: 201.35167, z: 0}
-      rotation: {x: 0, y: 0, z: -0.023237327, w: 0.99973}
+      position: {x: 120.421844, y: -0.000013304486, z: 0}
+      rotation: {x: 0, y: 0, z: 0.68090886, w: 0.7323682}
       length: 68.183235
-      parentId: -1
+      parentId: 3
       color:
         serializedVersion: 2
         rgba: 4294901760
@@ -2683,26 +2683,26 @@ ScriptedImporter:
       guid: 18cea1f60213b514aa5ee64e763ede2c
       position: {x: 924.9782, y: 413.3339, z: 0}
       rotation: {x: 0, y: 0, z: -0.5358165, w: 0.84433454}
-      length: 124.677246
+      length: 124.67711
       parentId: -1
       color:
         serializedVersion: 2
         rgba: 4294902015
     - name: AK_OnderBeen_02
       guid: 047eaf18bbea858458177def9cc16a6a
-      position: {x: 978.0659, y: 300.52386, z: 0}
-      rotation: {x: 0, y: 0, z: -0.5272387, w: 0.84971726}
-      length: 119.55423
-      parentId: -1
+      position: {x: 124.67706, y: -0.000036415455, z: 0}
+      rotation: {x: 0, y: 0, z: 0.010126688, w: 0.99994874}
+      length: 119.554276
+      parentId: 5
       color:
         serializedVersion: 2
         rgba: 4278223103
     - name: AK_Voet_03
       guid: 3583432ed5e4e254f8275b7338e274fa
-      position: {x: 1031.1525, y: 193.40227, z: 0}
-      rotation: {x: 0, y: 0, z: 0.19041817, w: 0.9817031}
+      position: {x: 119.55428, y: 0.00012841789, z: 0}
+      rotation: {x: 0, y: 0, z: 0.6793948, w: 0.733773}
       length: 65.925446
-      parentId: -1
+      parentId: 6
       color:
         serializedVersion: 2
         rgba: 4278255488
@@ -2717,19 +2717,19 @@ ScriptedImporter:
         rgba: 4286643968
     - name: AK_OnderArm_02
       guid: e6f01d83d5587a841b4beea43d32f299
-      position: {x: 784.07935, y: 513.732, z: 0}
-      rotation: {x: 0, y: 0, z: -0.8972415, w: 0.4415403}
+      position: {x: 119.42354, y: 0.000026984791, z: 0}
+      rotation: {x: 0, y: 0, z: 0.0036943739, w: 0.9999932}
       length: 107.94748
-      parentId: -1
+      parentId: 8
       color:
         serializedVersion: 2
         rgba: 4294934528
     - name: AK_Hand_03
       guid: f8158c9f1a2098c4c80d66c9a3441903
-      position: {x: 718.2216, y: 428.2018, z: 0}
-      rotation: {x: 0, y: 0, z: -0.89773667, w: 0.44053257}
+      position: {x: 107.947525, y: -0.0007967837, z: 0}
+      rotation: {x: 0, y: 0, z: -0.0011228427, w: 0.9999994}
       length: 57.31141
-      parentId: -1
+      parentId: 9
       color:
         serializedVersion: 2
         rgba: 4294901888
@@ -2744,19 +2744,19 @@ ScriptedImporter:
         rgba: 4286578943
     - name: VK_OnderArm_02
       guid: c758a379cb9f3c54c9840885c97d47c2
-      position: {x: 893.4013, y: 495.36823, z: 0}
-      rotation: {x: 0, y: 0, z: -0.6996264, w: 0.71450895}
+      position: {x: 120.21617, y: 0.000017551258, z: 0}
+      rotation: {x: 0, y: 0, z: 0.010523562, w: 0.9999446}
       length: 131.29932
-      parentId: -1
+      parentId: 11
       color:
         serializedVersion: 2
         rgba: 4278255615
     - name: VK_Hand_03
       guid: 50439cc4d336720459e473d92f935f65
-      position: {x: 896.1647, y: 364.09802, z: 0}
-      rotation: {x: 0, y: 0, z: -0.687757, w: 0.72594106}
+      position: {x: 131.29916, y: 0.000094160714, z: 0}
+      rotation: {x: 0, y: 0, z: 0.016478973, w: 0.9998642}
       length: 51.200993
-      parentId: -1
+      parentId: 12
       color:
         serializedVersion: 2
         rgba: 4278255360

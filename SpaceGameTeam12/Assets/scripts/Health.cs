@@ -60,7 +60,11 @@ public class Health : MonoBehaviour
                 break;
             case "medkit":
                 health += 2;
-                Debug.Log("health up");
+                if (health > 6)
+                {
+                    health = 6;
+                }
+                    Debug.Log("health up");
                 break;
             case "strong enemy":
                 health -= 2;

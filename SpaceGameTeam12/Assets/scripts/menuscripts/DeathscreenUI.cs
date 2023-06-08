@@ -26,15 +26,18 @@ public class DeathscreenUI : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         Debug.Log("Restart");
+        Time.timeScale = 1f;
     }
     public void mainMenu () 
     {
         SceneManager.LoadScene("MainMenu");
         Debug.Log("mainMenu");
+        Time.timeScale = 1f;
     }
     public void Quit()
     {
         Application.Quit(); 
         Debug.Log("Quit");
+        Time.timeScale = 1f;
     }
 }

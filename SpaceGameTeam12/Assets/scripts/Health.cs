@@ -2,8 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SocialPlatforms;
 using UnityEngine.UI;
 using static UnityEngine.RuleTile.TilingRuleOutput;
+using UnityEngine.Timeline;
 
 public class Health : MonoBehaviour
 {
@@ -92,11 +94,12 @@ public class Health : MonoBehaviour
         {
             health -= 1;
             Debug.Log("Health reduced! Current health: " + health);
-            if (health <= 0)
+            if (health <= 0 && !isdead)
             {
                 isdead = true;
                 gameManager.gameoverscreen();
                 Debug.Log("ded");
+                Time.timeScale = 0f;
             }
         }
     }

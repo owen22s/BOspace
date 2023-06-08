@@ -13,6 +13,8 @@ public class Health : MonoBehaviour
     public Sprite fullHeart;
     public Sprite emptyHeart;
     public UnityEngine.Vector3 spawnpoint;
+    public DeathscreenUI gameManager;
+    private bool isdead;
     void Update()
     {
         if (health > numOfHearts)
@@ -92,9 +94,9 @@ public class Health : MonoBehaviour
             Debug.Log("Health reduced! Current health: " + health);
             if (health <= 0)
             {
-                Debug.Log("Health is zero or negative!");
-                transform.position = spawnpoint;
-                health = 6;
+                isdead = true;
+                gameManager.gameoverscreen();
+                Debug.Log("ded");
             }
         }
     }

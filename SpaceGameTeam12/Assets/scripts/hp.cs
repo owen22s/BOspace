@@ -5,7 +5,8 @@ using UnityEngine;
 public class hp : MonoBehaviour
 {
     public int health = 6;
-
+    public DeathscreenUI gameManager;
+    private bool isdead;
     void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("Spikes")) 
@@ -54,12 +55,11 @@ public class hp : MonoBehaviour
 
 
 
-        if (health <= 0)
+        if (health <= 0 && !isdead)
         {
-            // Do something when health is zero or negative
-            Debug.Log("Health is zero or negative!");
-            transform.position = Vector2.zero; // Reset the object's position to (0, 0, 0)
-            health = 3; // Reset the health to 3
+            isdead= true;
+            gameManager.gameoverscreen();
+            Debug.Log("ded");
         }
     }
 

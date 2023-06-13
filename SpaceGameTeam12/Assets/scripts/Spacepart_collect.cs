@@ -6,9 +6,9 @@ using UnityEngine.SceneManagement;
 public class Spacepart_collect : MonoBehaviour
 {
     public int coins;
-    void OnCollisionEnter2D(Collision2D collision) 
+    void OnCollisionEnter2D(Collision2D collision)
     {
-        switch (collision.gameObject.tag.ToLower().Trim()) 
+        switch (collision.gameObject.tag.ToLower().Trim())
         {
             case "space_part":
                 coins++;
@@ -26,8 +26,24 @@ public class Spacepart_collect : MonoBehaviour
                 }
                 break;
         }
+         void OnTriggerEnter2D(Collider2D collision)
+        {
+            switch (collision.gameObject.tag.ToLower().Trim())
+            {
+                case "door":
+                    if (coins >= 1)
+                    {
+                        SceneManager.LoadScene("MainMenu");
+                    }
+                    break;
+                case "door2":
+                    if (coins >= 2)
+                    {
+                        SceneManager.LoadScene("Level_3");
+                    }
+                    break;
+            }
+        }
 
-    }
 
-
-}
+    } }

@@ -1,17 +1,25 @@
+using System.Runtime.CompilerServices;
+using Unity.Mathematics;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public float speed = 5f;
+    private float speed = 0.5f;
     public int maxJumps = 2;
     private int jumpsRemaining;
     public float dashSpeed = 10f;
     public float dashDuration = 0.5f;
     public float dashCooldown = 2f;
     private bool canDash = true;
+    public bool isFacingRight = true;
+    public float rotationSpeed;
+    private GameObject gameObject;
+    private float horizontal;
 
     private void Start()
     {
+        gameObject = GetComponent<GameObject>();
         jumpsRemaining = maxJumps;
     }
 
@@ -19,32 +27,64 @@ public class PlayerMovement : MonoBehaviour
     {
         // Get horizontal input
         float horizontalInput = Input.GetAxis("Horizontal");
-
+        float VerticalInput = Input.GetAxis("Vertical");
         // Calculate movement vector
         Vector2 movement = new Vector2(horizontalInput, 0f).normalized;
+        Vector2 movementDirection = new Vector2(horizontalInput, 0f);
+        horizontal = Input.GetAxisRaw("Horizontal");
 
-        // Apply movement
-        transform.position += new Vector3(movement.x, movement.y, 0f) * speed * Time.deltaTime;
+
+        if (Input.GetKey(KeyCode.D))
+        {
+            transform.position += new Vector3(movement.x, movement.y, 0f) * speed * Time.deltaTime;
+            transform.position = transform.forward;
+        }
+
+        if (Input.GetKey(KeyCode.A))
+        {
+            transform.position += new Vector3(-movement.x, -movement.y, -0f) * -speed * Time.deltaTime;
+        }
+        
+        
 
         // Check for jump input
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.W))
         {
             Jump();
         }
 
         // Check for dash input
-        if (Input.GetKeyDown(KeyCode.LeftShift) && canDash)
+        if (Input.GetKeyDown(KeyCode.Space) && canDash)
         {
             Dash(movement);
         }
+
+        if (Input.GetKeyDown(KeyCode.LeftShift))
+        {
+            speed = 3f;
+
+
+
+        }
+        if (Input.GetKeyUp(KeyCode.LeftShift))
+        {
+            speed = 1.5f;
+        }
+            
+
+        
+
+
     }
+
+  
 
     private void Jump()
     {
         if (jumpsRemaining > 0)
         {
             // Perform the jump action
-            float jumpForce = 5f;
+            float jumpForce = 3f;
             GetComponent<Rigidbody2D>().velocity = new Vector2(0f, jumpForce);
             GetComponent<AudioSource>().Play();
 
@@ -83,6 +123,17 @@ public class PlayerMovement : MonoBehaviour
         if (collision.gameObject.CompareTag("Ground"))
         {
             jumpsRemaining = maxJumps;
+        }
+    }
+
+    private void Turn()
+    {
+        if (isFacingRight && horizontal < 0f || !isFacingRight && horizontal > 0f)
+        {
+            isFacingRight = !isFacingRight;
+            Vector3 localScale = transform.localScale;
+            localScale.x *= -1f;
+            transform.localScale = localScale;
         }
     }
 }

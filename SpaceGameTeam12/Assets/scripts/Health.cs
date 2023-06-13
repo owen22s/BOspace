@@ -50,7 +50,7 @@ using UnityEngine.Timeline;
 
         switch(collision.gameObject.tag.ToLower().Trim())
         {
-            case "Spikes":
+            case "Spike":
             case "enemy":
                 health -= 1;
                 Debug.Log("Health reduced! Current health: " + health);

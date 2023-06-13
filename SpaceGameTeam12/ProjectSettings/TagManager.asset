@@ -9,6 +9,8 @@ TagManager:
   - Spike
   - Enemy
   - Spikes
+  - Space_part
+  - door
   layers:
   - Default
   - TransparentFX

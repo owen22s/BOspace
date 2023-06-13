@@ -9,6 +9,7 @@ public class PlayerMovement : MonoBehaviour
     public float dashDuration = 0.5f;
     public float dashCooldown = 2f;
     private bool canDash = true;
+    public float jumpForce = 5f;
 
     private void Start()
     {
@@ -43,8 +44,6 @@ public class PlayerMovement : MonoBehaviour
     {
         if (jumpsRemaining > 0)
         {
-            // Perform the jump action
-            float jumpForce = 5f;
             GetComponent<Rigidbody2D>().velocity = new Vector2(0f, jumpForce);
             GetComponent<AudioSource>().Play();
 

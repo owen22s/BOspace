@@ -2,8 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SocialPlatforms;
 using UnityEngine.UI;
 using static UnityEngine.RuleTile.TilingRuleOutput;
+using UnityEngine.Timeline;
 
 public class Health : MonoBehaviour
 {
@@ -55,9 +57,13 @@ public class Health : MonoBehaviour
                 Debug.Log("Collision occurred!");
                 if (health <= 0)
                 {
-                    Debug.Log("Health is zero or negative!");
-                    transform.position = spawnpoint;
-                    health = 6;
+                    if (health <= 0 && !isdead)
+                    {
+                        isdead = true;
+                        gameManager.gameoverscreen();
+                        Debug.Log("ded");
+                        Time.timeScale = 0f;
+                    }
                 }
                 break;
             case "medkit":
@@ -72,9 +78,13 @@ public class Health : MonoBehaviour
                 health -= 2;
                 if (health <= 0)
                 {
-                    Debug.Log("Health is zero or negative!");
-                    transform.position = spawnpoint;
-                    health = 6;
+                    if (health <= 0 && !isdead)
+                    {
+                        isdead = true;
+                        gameManager.gameoverscreen();
+                        Debug.Log("ded");
+                        Time.timeScale = 0f;
+                    }
                 }
                 break;
             case "healflower":
@@ -84,6 +94,7 @@ public class Health : MonoBehaviour
                     health = 6;
                 }
                 break;
+
         }
     }
     void OnTriggerEnter2D(Collider2D other)
@@ -92,11 +103,12 @@ public class Health : MonoBehaviour
         {
             health -= 1;
             Debug.Log("Health reduced! Current health: " + health);
-            if (health <= 0)
+            if (health <= 0 && !isdead)
             {
                 isdead = true;
                 gameManager.gameoverscreen();
                 Debug.Log("ded");
+                Time.timeScale = 0f;
             }
         }
     }

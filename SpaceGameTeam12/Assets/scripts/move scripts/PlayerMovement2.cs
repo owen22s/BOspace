@@ -11,12 +11,16 @@ public class PlayerMovement2 : MonoBehaviour
     public float speed = 5f;
     public float jumpingPower = 10f;
     private bool isFacingRight = true;
+    public Animator animator;
 
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask groundLayer;
 
-
+    void start()
+    {
+        animator = GetComponent<Animator>();
+    }
     void Update()
     {
         horizontal = Input.GetAxisRaw("Horizontal");
@@ -29,16 +33,34 @@ public class PlayerMovement2 : MonoBehaviour
         if (Input.GetButtonDown("Jump") && rb.velocity.y > 0f)
         {
             rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
+            animator.SetBool("Jump", true);
+        }
+        else
+        {
+            animator.SetBool("Jump", false);
         }
 
         if (Input.GetKey(KeyCode.D))
         {
             rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
+            
         }
+        
 
         if (Input.GetKey(KeyCode.A))
         {
             rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
+            
+        }
+       
+
+        if (Input.GetButton("Horizontal"))
+        {
+            animator.SetBool("Walk", true);
+        }
+        else
+        {
+            animator.SetBool("Walk", false);
         }
 
         Turn();

@@ -1,17 +1,21 @@
+using System.Runtime.CompilerServices;
+using Unity.Mathematics;
 using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    private float speed = 1.5f;
+    private float speed = 0.5f;
     public int maxJumps = 2;
     private int jumpsRemaining;
     public float dashSpeed = 10f;
     public float dashDuration = 0.5f;
     public float dashCooldown = 2f;
     private bool canDash = true;
-    public GameObject gameObject;
-    
+    public bool isFacingRight = true;
+    public float rotationSpeed;
+    private GameObject gameObject;
+    private float horizontal;
 
     private void Start()
     {
@@ -23,12 +27,12 @@ public class PlayerMovement : MonoBehaviour
     {
         // Get horizontal input
         float horizontalInput = Input.GetAxis("Horizontal");
-
+        float VerticalInput = Input.GetAxis("Vertical");
         // Calculate movement vector
         Vector2 movement = new Vector2(horizontalInput, 0f).normalized;
+        Vector2 movementDirection = new Vector2(horizontalInput, 0f);
+        horizontal = Input.GetAxisRaw("Horizontal");
 
-        // Apply movement
-        
 
         if (Input.GetKey(KeyCode.D))
         {
@@ -39,8 +43,8 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKey(KeyCode.A))
         {
             transform.position += new Vector3(-movement.x, -movement.y, -0f) * -speed * Time.deltaTime;
-            transform.position = transform.forward;
         }
+        
         
 
         // Check for jump input
@@ -72,6 +76,8 @@ public class PlayerMovement : MonoBehaviour
 
 
     }
+
+  
 
     private void Jump()
     {
@@ -117,6 +123,17 @@ public class PlayerMovement : MonoBehaviour
         if (collision.gameObject.CompareTag("Ground"))
         {
             jumpsRemaining = maxJumps;
+        }
+    }
+
+    private void Turn()
+    {
+        if (isFacingRight && horizontal < 0f || !isFacingRight && horizontal > 0f)
+        {
+            isFacingRight = !isFacingRight;
+            Vector3 localScale = transform.localScale;
+            localScale.x *= -1f;
+            transform.localScale = localScale;
         }
     }
 }

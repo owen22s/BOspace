@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Strong Enemy
   - Ground
+  - Wall
+  - Killzone
+  - Gravity
   layers:
   - Default
   - TransparentFX
@@ -13,7 +16,7 @@ TagManager:
   - 
   - Water
   - UI
-  - 
+  - Ground
   - 
   - 
   - 

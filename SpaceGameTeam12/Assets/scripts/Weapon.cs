@@ -11,12 +11,22 @@ public class Weapon : MonoBehaviour
     private bool canShoot = true;
     private float shootDelay = 2.5f;
     public float time = 0f;
+    public bool haveweapon = false;
 
     // Update is called once per frame
     void Update()
     {
+        void OnCollisionEnter2D(Collision2D collision) 
+        {
+            switch (collision.gameObject.tag.ToLower().Trim())
+            {
+                case "weapon":
+                    haveweapon = true; 
+                    break;
+            }
+            }
         time += Time.deltaTime;
-        if (Input.GetMouseButtonDown(0) && time >= shootDelay)
+        if (Input.GetMouseButtonDown(0) && time >= shootDelay && haveweapon == true)
         {
             Shoot();
             time = 0f;

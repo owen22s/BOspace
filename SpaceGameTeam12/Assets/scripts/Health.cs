@@ -7,7 +7,7 @@ using UnityEngine.UI;
 using static UnityEngine.RuleTile.TilingRuleOutput;
 using UnityEngine.Timeline;
 
-/* public class Health : MonoBehaviour
+ public class Health : MonoBehaviour
 {
     public float health;
     public int numOfHearts;
@@ -113,4 +113,3 @@ using UnityEngine.Timeline;
         }
     }
 }
-*/

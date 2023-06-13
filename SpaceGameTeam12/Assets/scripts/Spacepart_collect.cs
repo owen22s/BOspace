@@ -12,6 +12,7 @@ public class Spacepart_collect : MonoBehaviour
         {
             case "space_part":
                 coins++;
+                Debug.Log("coin");
                 break;
             case "door":
                 if (coins >= 1)

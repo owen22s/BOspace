@@ -12,10 +12,14 @@ public class PlayerMovement : MonoBehaviour
     public float dashDuration = 0.5f;
     public float dashCooldown = 2f;
     private bool canDash = true;
+<<<<<<< HEAD
     public bool isFacingRight = true;
     public float rotationSpeed;
     private GameObject gameObject;
     private float horizontal;
+=======
+    public float jumpForce = 5f;
+>>>>>>> dylan
 
     private void Start()
     {
@@ -83,8 +87,11 @@ public class PlayerMovement : MonoBehaviour
     {
         if (jumpsRemaining > 0)
         {
+<<<<<<< HEAD
             // Perform the jump action
             float jumpForce = 3f;
+=======
+>>>>>>> dylan
             GetComponent<Rigidbody2D>().velocity = new Vector2(0f, jumpForce);
             GetComponent<AudioSource>().Play();
 

@@ -36,6 +36,7 @@ public class EnemyPatrolShooter : MonoBehaviour
             {
                 once = true;
                 StartCoroutine(Wait());
+                transform.Rotate(0, 180, 0);
             }
         }
     }

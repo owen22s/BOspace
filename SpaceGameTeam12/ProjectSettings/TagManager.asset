@@ -11,6 +11,7 @@ TagManager:
   - Spikes
   - Space_part
   - door
+  - bullet
   layers:
   - Default
   - TransparentFX

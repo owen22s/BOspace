@@ -17,7 +17,7 @@ public class Spacepart_collect : MonoBehaviour
             case "door":
                 if (coins >= 1)
                 {
-                    SceneManager.LoadScene("Level_2");
+                    SceneManager.LoadScene("MainGame");
                 }
                 break;
             case "door2":
@@ -26,24 +26,6 @@ public class Spacepart_collect : MonoBehaviour
                     SceneManager.LoadScene("Level_3");
                 }
                 break;
-        }
-         void OnTriggerEnter2D(Collider2D collision)
-        {
-            switch (collision.gameObject.tag.ToLower().Trim())
-            {
-                case "door":
-                    if (coins >= 1)
-                    {
-                        SceneManager.LoadScene("MainMenu");
-                    }
-                    break;
-                case "door2":
-                    if (coins >= 2)
-                    {
-                        SceneManager.LoadScene("Level_3");
-                    }
-                    break;
-            }
         }
 
 

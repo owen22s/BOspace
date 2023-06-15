@@ -5,14 +5,14 @@ using UnityEngine;
 public class EnemyBulletScript : MonoBehaviour
 {
     private GameObject player;
-    private Rigidbody rb;
+    private Rigidbody2D rb;
     public float force;
     private float timer;
     
     
     void Start()
     {
-        rb= GetComponent<Rigidbody>();
+        rb= GetComponent<Rigidbody2D>();
         player = GameObject.FindGameObjectWithTag("Player");
 
         Vector2 direction = player.transform.position - transform.position;
@@ -31,7 +31,7 @@ public class EnemyBulletScript : MonoBehaviour
             Destroy(gameObject);
         }
     }
-    void OnTriggerEnter(Collider other)
+    void OnTriggerEnter2D(Collider2D other)
     {
         if(other.gameObject.CompareTag("Player"))
         {

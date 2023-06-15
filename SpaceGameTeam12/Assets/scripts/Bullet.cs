@@ -9,18 +9,24 @@ public class Bullet : MonoBehaviour
     {
         // Destroy the bullet after the specified lifetime
         Destroy(gameObject, lifetime);
+        gameObject.transform.rotation = Quaternion.Euler(0f, 0f, 90f);
+
     }
 
     private void Update()
     {
         // Move the bullet forward
-        transform.Translate(Vector3.left * speed * Time.deltaTime);
+        transform.Translate(Vector2.right * speed * Time.deltaTime);
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        // Check if the bullet collided with an object tagged as an enemy
         if (other.gameObject.CompareTag("Enemy"))
+        {
+            Destroy(other.gameObject);
+            Destroy(gameObject); // Destroy the bullet as well if it hits an enemy
+        }
+        if (other.gameObject.CompareTag("StrongEnemy"))
         {
             Destroy(other.gameObject);
             Destroy(gameObject); // Destroy the bullet as well if it hits an enemy

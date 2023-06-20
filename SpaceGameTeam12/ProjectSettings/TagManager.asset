@@ -4,11 +4,8 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Strong Enemy
+  - Spikes
   - Ground
-  - Wall
-  - Killzone
-  - Gravity
   layers:
   - Default
   - TransparentFX
@@ -16,7 +13,7 @@ TagManager:
   - 
   - Water
   - UI
-  - Ground
+  - 
   - 
   - 
   - 
@@ -46,18 +43,18 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Back
-    uniqueID: 1517072921
+  - name: -2
+    uniqueID: 1869832053
     locked: 0
-  - name: Backfront
-    uniqueID: 461847499
+  - name: -1
+    uniqueID: 3611629049
     locked: 0
-  - name: Mid
-    uniqueID: 4133447061
+  - name: 0
+    uniqueID: 1884733811
     locked: 0
-  - name: Frontback
-    uniqueID: 1135199427
+  - name: 1
+    uniqueID: 723276947
     locked: 0
-  - name: Front
-    uniqueID: 11788343
+  - name: 2
+    uniqueID: 3967426143
     locked: 0

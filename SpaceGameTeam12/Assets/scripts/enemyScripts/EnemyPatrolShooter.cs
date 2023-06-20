@@ -20,8 +20,8 @@ public class EnemyPatrolShooter : MonoBehaviour
     }
     private void Update()
     {
-        float distance = Vector3.Distance(transform.position, player.transform.position);
-        if (distance < 5)
+        float distance = Vector2.Distance(transform.position, player.transform.position);
+        if (distance < 10)
         {
             StopEnemy();
         }
@@ -36,6 +36,7 @@ public class EnemyPatrolShooter : MonoBehaviour
             {
                 once = true;
                 StartCoroutine(Wait());
+                transform.Rotate(0, 180, 0);
             }
         }
     }

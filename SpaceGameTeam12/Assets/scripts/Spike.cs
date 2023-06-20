@@ -4,7 +4,7 @@ public class Spike : MonoBehaviour
 {
     public Transform spawnPoint;
 
-    void OnTriggerEnter(Collider other)
+    void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
         {

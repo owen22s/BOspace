@@ -9,7 +9,7 @@ public class Weapon : MonoBehaviour
     public AudioSource lasereffect;
 
     private bool canShoot = true;
-    private float shootDelay = 1.5f;
+    private float shootDelay = 2.5f;
     public float time = 0f;
 
     // Update is called once per frame

@@ -1,5 +1,4 @@
 using UnityEngine;
-using System.Collections;
 
 public class Weapon : MonoBehaviour
 {
@@ -10,27 +9,38 @@ public class Weapon : MonoBehaviour
 
     private bool canShoot = true;
     private float shootDelay = 2.5f;
-    public float time = 0f;
+    private float time = 0f;
+    public bool haveweapon;
 
-    // Update is called once per frame
     void Update()
     {
         time += Time.deltaTime;
-        if (Input.GetMouseButtonDown(0) && time >= shootDelay)
+        if (Input.GetMouseButtonDown(0) && time >= shootDelay && haveweapon)
         {
             Shoot();
             time = 0f;
             Debug.Log("test");
         }
-
-
     }
 
     void Shoot()
     {
-        // Create a new bullet instance
-        GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+        Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        Vector2 direction = mousePosition - firePoint.position;
+
+        GameObject bullet = Instantiate(bulletPrefab, firePoint.position, Quaternion.identity);
+        bullet.GetComponent<Rigidbody2D>().AddForce(direction.normalized * bulletForce, ForceMode2D.Impulse);
         lasereffect.Play();
     }
 
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        switch (collision.gameObject.tag.ToLower().Trim())
+        {
+            case "weapon":
+                haveweapon = true;
+                Destroy(collision.gameObject);
+                break;
+        }
+    }
 }
